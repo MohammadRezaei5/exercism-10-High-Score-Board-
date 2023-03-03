@@ -36,3 +36,20 @@ function updateScore(scoreBoard, player, points) {
 }
 
 // console.log(updateScore({ "Freyja Ćirić": 12771008 }, "Freyja Ćirić", 73));
+
+///---///
+
+// const scoreBoard = {
+//   "Dave Thomas": 44,
+//   "Freyja Ćirić": 539,
+//   "José Valim": 265
+// };
+
+function applyMondayBonus(scoreBoard) {
+  for (let player in scoreBoard) {
+    scoreBoard[player] += 100;
+  }
+  return scoreBoard;
+}
+
+// console.log(applyMondayBonus(scoreBoard));
