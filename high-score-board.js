@@ -27,3 +27,12 @@ function removePlayer(scoreBoard, player) {
 
 // console.log(removePlayer({ "Dave Thomas": 0 }, "Dave Thomas"));
 // console.log(removePlayer({ "Dave Thomas": 0 }, "Rose Fanaras"));
+
+///---///
+
+function updateScore(scoreBoard, player, points) {
+  scoreBoard[player] += points;
+  return scoreBoard;
+}
+
+// console.log(updateScore({ "Freyja Ćirić": 12771008 }, "Freyja Ćirić", 73));
