@@ -53,3 +53,17 @@ function applyMondayBonus(scoreBoard) {
 }
 
 // console.log(applyMondayBonus(scoreBoard));
+
+///---///
+
+// const params = { score: 400, normalizeFunction: normalize };
+
+function normalize(score) {
+  return 2 * score + 10;
+}
+
+function normalizeScore(params) {
+  return params.normalizeFunction(params.score);
+}
+
+// console.log(normalizeScore(params));
