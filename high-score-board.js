@@ -8,3 +8,12 @@ function createScoreBoard() {
 }
 
 // console.log(createScoreBoard());
+
+///---///
+
+function addPlayer(scoreBoard, player, score) {
+  scoreBoard[player] = score;
+  return scoreBoard;
+}
+
+// console.log(addPlayer({ "Dave Thomas": 0 }, "José Valim", 486373));
