@@ -17,3 +17,13 @@ function addPlayer(scoreBoard, player, score) {
 }
 
 // console.log(addPlayer({ "Dave Thomas": 0 }, "José Valim", 486373));
+
+///---///
+
+function removePlayer(scoreBoard, player) {
+  delete scoreBoard[player];
+  return scoreBoard;
+}
+
+// console.log(removePlayer({ "Dave Thomas": 0 }, "Dave Thomas"));
+// console.log(removePlayer({ "Dave Thomas": 0 }, "Rose Fanaras"));
